@@ -20,7 +20,8 @@ export default {
   },
   methods: {
     clickBt() {
-      this.$emit('atualizarDrawer');
+      this.dadoBooleano = true;
+      this.$emit('atualizarDrawer', this.dadoBooleano);
     },
   },
 };
