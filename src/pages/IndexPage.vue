@@ -11,7 +11,9 @@
     </q-page>
     <q-page>
       <div class="container-categories">
-        <p class="p-categoria">Categorias</p>
+        <div class="container-h2">
+          <h2 class="h2-categoria elementor-size-default">Categorias</h2>
+        </div>
         <q-intersection
           transition="fade"
           transition-duration="3000"
@@ -25,18 +27,70 @@
             <q-card class="card-categoria row no-shadow">
               <div class="categories-icon">
                 <span>
-                  <img class="icon" src="src/imagens/individual.png" />
+                  <img class="icon" src="src/imagens/nachos.png" />
                 </span>
               </div>
 
               <q-card-section>
-                <div class="text-h6">Our Changing Planet</div>
-                <div class="text-subtitle2">by John Doe</div>
+                <div class="text-h6">Kits Salados</div>
               </q-card-section>
 
               <q-card-section class="q-pt-none">
                 {{ lorem }}
               </q-card-section>
+            </q-card>
+          </q-intersection>
+        </q-intersection>
+
+        <q-intersection
+          transition="fade"
+          transition-duration="2000"
+          class="example-item"
+        >
+          <q-intersection
+            transition="slide-up"
+            transition-duration="1000"
+            class="example-item"
+          >
+            <q-card class="card-pedidos" flat bordered>
+              <q-img src="src\imagens\salgados.jpg" />
+
+              <q-card-section>
+                <q-btn
+                  fab
+                  color="primary"
+                  icon="place"
+                  class="absolute"
+                  style="top: 0; right: 12px; transform: translateY(-50%)"
+                />
+
+                <div class="row no-wrap items-center">
+                  <div class="col text-h6 ellipsis">Individual</div>
+                  <div
+                    class="col-auto text-grey text-caption q-pt-md row no-wrap items-center"
+                  >
+                    <q-icon name="place" />
+                    250 ft
+                  </div>
+                </div>
+
+                <q-rating v-model="stars" :max="5" size="32px" />
+              </q-card-section>
+
+              <q-card-section class="q-pt-none">
+                <div class="text-subtitle1">$・30 Salgados</div>
+                <div class="text-caption text-grey">
+                  Kit individual com 30 salgados com escola de 3 sabores de 10
+                  em 10 sabores
+                </div>
+              </q-card-section>
+
+              <q-separator />
+
+              <q-card-actions>
+                <q-btn flat round icon="event" />
+                <q-btn flat color="primary"> Reserve </q-btn>
+              </q-card-actions>
             </q-card>
           </q-intersection>
         </q-intersection>
@@ -79,7 +133,7 @@ p {
 .container-categories {
   padding: 0 15px;
 }
-.p-categoria {
+.h2-categoria {
   font-family: 'Montserrat', sans-serif;
   color: #000929;
   margin-left: 1rem;
@@ -88,10 +142,11 @@ p {
   font-size: 32px;
 }
 .card-categoria {
-  width: 444px;
+  width: 23rem;
   height: 122px;
   background: #eeeeee;
   padding: 20px 0px 20px 20px;
+  margin-top: 3rem;
   border-radius: 20px;
   text-align: center;
   position: relative;
@@ -111,5 +166,17 @@ p {
   text-align: center;
   line-height: 82px;
   transition: all 0.8s ease 0s;
+}
+
+.container-h2 {
+  margin-top: 3rem;
+  border-style: solid;
+  border-width: 3px 0px 3px 0px;
+  border-color: #dc9457;
+}
+
+.card-pedidos {
+  margin-top: 10rem;
+  border-radius: 1rem;
 }
 </style>
