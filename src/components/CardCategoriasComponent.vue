@@ -1,12 +1,12 @@
 <template>
   <q-intersection
     transition="fade"
-    transition-duration="3000"
+    transition-duration="500"
     class="example-item"
   >
     <q-intersection
       transition="slide-right"
-      transition-duration="1000"
+      transition-duration="500"
       class="example-item"
     >
       <q-card class="card-categoria row no-shadow">

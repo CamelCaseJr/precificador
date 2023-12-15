@@ -15,7 +15,17 @@
           <h2 class="h2-categoria elementor-size-default">Categorias</h2>
         </div>
         <CardCategoriasComponent />
-        <CardItensComponent />
+        <div class="card-itens-container">
+          <q-intersection
+            transition="fade"
+            transition-duration="1000"
+            class="example-item"
+          >
+            <q-intersection transition="slide-up" class="example-item">
+              <CardItensComponent />
+            </q-intersection>
+          </q-intersection>
+        </div>
       </div>
     </q-page>
   </div>
@@ -81,5 +91,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card-itens-container {
+  max-height: 400px;
 }
 </style>
