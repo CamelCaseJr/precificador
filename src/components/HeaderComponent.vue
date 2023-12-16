@@ -1,10 +1,10 @@
 <template>
   <q-header class="container-header">
     <q-toolbar>
-      <q-btn dense flat round icon="home" @click="clickBt" />
+      <q-btn dense flat round icon="home" size="32px" @click="clickBt" />
 
       <q-toolbar-title class="container-toolbar"> +HuMm </q-toolbar-title>
-      <q-btn dense flat round icon="menu" @click="clickBt" />
+      <q-btn dense flat round icon="menu" size="32px" @click="clickBt" />
     </q-toolbar>
   </q-header>
 </template>
@@ -29,9 +29,9 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 .container-header {
-  background-color: #000929;
-  color: #edebee;
-  height: 5rem;
+  background-color: #c00a27;
+  color: #fafafa;
+  height: 7rem;
 
   // Centraliza o conteúdo verticalmente
   display: flex;
@@ -39,5 +39,6 @@ export default {
 }
 .container-toolbar {
   font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 48px;
 }
 </style>
