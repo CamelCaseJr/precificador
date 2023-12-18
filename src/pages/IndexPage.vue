@@ -6,10 +6,7 @@
         <div class="container-h2">
           <h2 class="h2-categoria elementor-size-default">Categorias</h2>
         </div>
-        <CardCategoriasComponent
-          nome="Kit Salgados"
-          linkImg="/src/imagens/icons/coxinha(1).png"
-        />
+        <CardCategoriasComponent nome="Kit Salgados" :linkImg="coxinha" />
         <CardCategoriasComponent
           nome="kit Festa"
           linkImg="/src/imagens/icons/party-popper.png"
@@ -29,6 +26,9 @@
 import CardItensComponent from '../components/CardItensComponent.vue';
 import CardCategoriasComponent from '../components/CardCategoriasComponent.vue';
 import PageBaner from '../pages/PageBaner.vue';
+import { url } from 'inspector';
+
+const coxinha = url('../imagens/icons/coxinha(1).png');
 
 const components = {
   CardItensComponent,
