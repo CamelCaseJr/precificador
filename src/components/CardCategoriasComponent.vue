@@ -12,24 +12,27 @@
       <q-card class="card-categoria row no-shadow">
         <div class="categories-icon">
           <span>
-            <img class="icon" src="src/imagens/nachos.png" />
+            <img class="icon" :src="props.linkImg" />
           </span>
         </div>
 
         <q-card-section>
-          <div class="text-h6">Kits Salados</div>
-        </q-card-section>
-
-        <q-card-section class="q-pt-none">
-          {{ lorem }}
+          <div class="text-h6">{{ props.nome }}</div>
         </q-card-section>
       </q-card>
     </q-intersection>
   </q-intersection>
 </template>
 
-<script>
-export default {};
+<script setup>
+const props = defineProps({
+  nome: {
+    type: String,
+  },
+  linkImg: {
+    type: String,
+  },
+});
 </script>
 <style>
 .card-categoria {

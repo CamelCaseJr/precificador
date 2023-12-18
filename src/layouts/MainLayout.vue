@@ -17,6 +17,7 @@ export default {
       isAberto: ref(false),
     };
   },
+
   components: {
     HeaderComponent,
   },

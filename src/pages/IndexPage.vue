@@ -1,14 +1,23 @@
 <template>
   <div>
-    <q-page class="container-page">
-      <div class="container-div"></div>
-    </q-page>
+    <PageBaner />
     <q-page>
       <div class="container-categories">
         <div class="container-h2">
           <h2 class="h2-categoria elementor-size-default">Categorias</h2>
         </div>
-        <CardCategoriasComponent />
+        <CardCategoriasComponent
+          nome="Kit Salgados"
+          linkImg="src/imagens/icons/coxinha(1).png"
+        />
+        <CardCategoriasComponent
+          nome="kit Festa"
+          linkImg="src/imagens/icons/party-popper.png"
+        />
+        <CardCategoriasComponent
+          nome="Bebidas"
+          linkImg="src/imagens/icons/lata-de-refrigerante.png"
+        />
 
         <CardItensComponent />
       </div>
@@ -16,39 +25,21 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import CardItensComponent from '../components/CardItensComponent.vue';
 import CardCategoriasComponent from '../components/CardCategoriasComponent.vue';
-import coxinhaCapa from '../imagens/coxinha-capa.jpg';
-import coxinhaImage from '../imagens/coxinha.jpg';
-import { ref } from 'vue';
-export default {
-  data() {
-    return {
-      images: [coxinhaCapa, coxinhaImage],
-      slide: ref(1),
-      autoplay: ref(true),
-    };
-  },
-  components: {
-    CardItensComponent,
-    CardCategoriasComponent,
-  },
+import PageBaner from '../pages/PageBaner.vue';
+
+const components = {
+  CardItensComponent,
+  CardCategoriasComponent,
+  PageBaner,
 };
 </script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
-.container-div {
-  background-image: url('../imagens/baner.png');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-.container-page {
-}
 
 .text-card {
   font-family: 'Yanone Kaffeesatz', sans-serif;
