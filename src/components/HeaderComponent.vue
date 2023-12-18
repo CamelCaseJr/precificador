@@ -31,7 +31,7 @@ export default {
 .container-header {
   background-color: #c00a27;
   color: #fafafa;
-  height: 7rem;
+  height: 5rem;
 
   // Centraliza o conteúdo verticalmente
   display: flex;
@@ -39,6 +39,6 @@ export default {
 }
 .container-toolbar {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 48px;
+  font-size: 42px;
 }
 </style>

@@ -1,11 +1,7 @@
 <template>
   <div>
     <q-page class="container-page">
-      <q-card flat class="my-card">
-        <q-card-section>
-          <div class="text-card">Descubra Novos Sabores!</div>
-        </q-card-section>
-      </q-card>
+      <div class="container-div"></div>
     </q-page>
     <q-page>
       <div class="container-categories">
@@ -44,17 +40,14 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
-.container-page {
-  padding-top: 5rem;
-}
-
-.my-card {
-  background-image: url('../imagens/coxinha-capa.jpg');
+.container-div {
+  background-image: url('../imagens/baner.png');
   background-size: cover;
   background-position: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 1rem;
+  height: 100vh;
+}
+
+.container-page {
 }
 
 .text-card {
