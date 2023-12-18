@@ -4,19 +4,19 @@
     <q-page>
       <div class="container-categories">
         <div class="container-h2">
-          <h2 class="h2-categoria elementor-size-default">teste de munança</h2>
+          <h2 class="h2-categoria elementor-size-default">Categorias</h2>
         </div>
         <CardCategoriasComponent
           nome="Kit Salgados"
-          linkImg="/imagens/icons/coxinha(1).png"
+          linkImg="/src/imagens/icons/coxinha(1).png"
         />
         <CardCategoriasComponent
           nome="kit Festa"
-          linkImg="/imagens/icons/party-popper.png"
+          linkImg="/src/imagens/icons/party-popper.png"
         />
         <CardCategoriasComponent
           nome="Bebidas"
-          linkImg="/imagens/icons/lata-de-refrigerante.png"
+          linkImg="/src/imagens/icons/lata-de-refrigerante.png"
         />
 
         <CardItensComponent />
