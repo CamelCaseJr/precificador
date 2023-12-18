@@ -33,8 +33,7 @@
       <q-card-section class="q-pt-none">
         <div class="text-subtitle1">$・30 Salgados</div>
         <div class="text-caption text-grey">
-          Kit individual com 30 salgados com escola de 3 sabores de 10 em 10
-          sabores
+          Kit individual com 30 salgados com escolha de 3 sabores de 10 em 10
         </div>
       </q-card-section>
 
