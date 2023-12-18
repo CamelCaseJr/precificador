@@ -4,7 +4,7 @@
     <q-page>
       <div class="container-categories">
         <div class="container-h2">
-          <h2 class="h2-categoria elementor-size-default">Categorias</h2>
+          <h2 class="h2-categoria elementor-size-default">teste de munança</h2>
         </div>
         <CardCategoriasComponent
           nome="Kit Salgados"
