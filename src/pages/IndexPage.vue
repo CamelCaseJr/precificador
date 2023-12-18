@@ -28,7 +28,7 @@ import CardCategoriasComponent from '../components/CardCategoriasComponent.vue';
 import PageBaner from '../pages/PageBaner.vue';
 import { url } from 'inspector';
 
-const coxinha = url('../imagens/icons/coxinha(1).png');
+const coxinha = url('../imagens/baner.png');
 
 const components = {
   CardItensComponent,
