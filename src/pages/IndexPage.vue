@@ -8,15 +8,15 @@
         </div>
         <CardCategoriasComponent
           nome="Kit Salgados"
-          linkImg="src/imagens/icons/coxinha(1).png"
+          linkImg="../imagens/icons/coxinha(1).png"
         />
         <CardCategoriasComponent
           nome="kit Festa"
-          linkImg="src/imagens/icons/party-popper.png"
+          linkImg="../imagens/icons/party-popper.png"
         />
         <CardCategoriasComponent
           nome="Bebidas"
-          linkImg="src/imagens/icons/lata-de-refrigerante.png"
+          linkImg="../imagens/icons/lata-de-refrigerante.png"
         />
 
         <CardItensComponent />
