@@ -6,7 +6,7 @@
   >
     >
     <q-card class="card-pedidos" flat bordered>
-      <q-img src="src\imagens\salgados.jpg" />
+      <q-img src="imagens\salgados.jpg" />
 
       <q-card-section>
         <q-btn
@@ -47,7 +47,7 @@
           style="width: 100ch; border-radius: 1rem"
         >
           <q-avatar size="42px">
-            <img src="src\imagens\carrinho-de-compras.png" />
+            <img src="icons\carrinho-de-compras.png" />
           </q-avatar>
           Adicionar
         </q-btn>
