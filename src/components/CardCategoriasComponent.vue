@@ -12,7 +12,7 @@
       <q-card class="card-categoria row no-shadow">
         <div class="categories-icon">
           <span>
-            <img class="icon" :href="props.linkImg" />
+            <img class="icon" :src="props.linkImg" />
           </span>
         </div>
 
@@ -30,7 +30,7 @@ const props = defineProps({
     type: String,
   },
   linkImg: {
-    type: URL,
+    type: String,
   },
 });
 </script>

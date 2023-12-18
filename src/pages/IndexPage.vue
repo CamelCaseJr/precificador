@@ -6,14 +6,17 @@
         <div class="container-h2">
           <h2 class="h2-categoria elementor-size-default">Categorias</h2>
         </div>
-        <CardCategoriasComponent nome="Kit Salgados" :linkImg="coxinha" />
+        <CardCategoriasComponent
+          nome="Kit Salgados"
+          linkImg="icons/coxinha(1).png"
+        />
         <CardCategoriasComponent
           nome="kit Festa"
-          linkImg="/src/imagens/icons/party-popper.png"
+          linkImg="icons/party-popper.png"
         />
         <CardCategoriasComponent
           nome="Bebidas"
-          linkImg="/src/imagens/icons/lata-de-refrigerante.png"
+          linkImg="icons/lata-de-refrigerante.png"
         />
 
         <CardItensComponent />
